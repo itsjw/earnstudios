@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<!-- One -->
+<section>
+
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x grid-padding-y align-center">
+          <div class="small-11 medium-10 cell" data-aos="fade-in">
+              <h1>Creatively, we place no restrictions on what we invent.</h1>
+          </div>
+        </div>
+        
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-11 medium-6 large-6 large-offset-4  cell" data-aos="fade-in">
+              <h3>Whether that involves building disruptive new brands or launching innovative products. However, we always abide by one rule: it must be the right thing to grow your business.  </h3>
+          </div>
+        </div>
+      </div>
+    
+</section>
+<!-- End One -->
+
+
+<!-- Projects -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1">
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% for project in projects %}
+      <div class="cell projects__list" data-aos="fade-in">
+      {% include item.html %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End Projects -->

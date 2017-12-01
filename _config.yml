@@ -1,0 +1,54 @@
+---
+title: EARN Studios
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: false
+url: https://www.earnstudios.com
+baseurl: 
+description: EARN is a consultancy for future facing brands. Founded in 2013 to build long term brand love and revenue with brave clients.
+permalink: pretty
+exclude:
+- bower.json
+- package.json
+- config.codekit3
+- README*
+- LICENSE*
+- CHANGELOG*
+- node_modules
+- ".gitignore"
+- bower_components
+- assets/scss
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+colophon: http://garethjohnsdesign.com
+company: EARN Studios Limited
+email: hello@earnstudios.com
+google_site_verification: rOPaFOZ15OwhQRVRAWah2G1u4wvP83iRa4XpIqkcJyg
+analytics: UA-84661141-1
+logo: "/assets/img/logo.svg"
+per_page: 12
+date_format: "%d %B %Y"
+future: true
+social:
+  instagram: 
+compress_html:
+  comments:
+  - "<!-- "
+  - " -->"
+  blanklines: true
+  profile: false
