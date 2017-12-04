@@ -66,8 +66,9 @@
 // ---------
 
 // $global-font-size: 100%;
-$global-font-size: 22px;
-$global-width: rem-calc(1200);
+$global-font-size: 18px;
+// $global-width: rem-calc(1200);
+$global-width: rem-calc(1440);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #0a0a0a,
@@ -114,7 +115,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xxlarge);
 
 // 3. The Grid
 // -----------
@@ -138,43 +139,42 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 // $header-lineheight: 1.4;
-$header-lineheight: 1.15;
+$header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
+    'h1': ('font-size': 32),
     'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h3': ('font-size': 18),
     'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 18),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 40),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 18),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 18),
   ),
-/*
-    medium: (
-    'h1': ('font-size': 70),
-    'h2': ('font-size': 39),
-    'h3': ('font-size': 32),
-    'h4': ('font-size': 22),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
-  ),
-*/
   
     large: (
-    'h1': ('font-size': 70),
-    'h2': ('font-size': 39),
-    'h3': ('font-size': 32),
-    'h4': ('font-size': 22),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 28),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 18),
+  ),
+  
+  xxlarge: (
+    'h1': ('font-size': 52),
+    'h2': ('font-size': 28),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 18),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -190,7 +190,8 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+// $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color-hover: scale-color($anchor-color, $lightness: 50%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -889,8 +890,8 @@ $grid-margin-gutters: (
 );
 */
 $grid-margin-gutters: (
-  small: 20px,
-  medium: 30px,
+  small: 32px,
+  medium: 48px,
   large: 64px
 );
 $grid-padding-gutters: $grid-margin-gutters;

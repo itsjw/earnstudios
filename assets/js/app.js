@@ -16,19 +16,61 @@ $(function() {
 window.addEventListener('load', AOS.refresh);
 });
 
-$('#video-gallery').lightGallery({
-    counter: false,
-    youtubePlayerParams: {
-        modestbranding: 1,
-        showinfo: 0,
-        rel: 0,
-        controls: 0
-    },
-    vimeoPlayerParams: {
-        autoplay: 0,
-        title : 0,
-        byline : 0,
-        portrait : 0,
-        color : 'FFFFFF'   
-    }
+
+var triangleAnimation = anime({
+  targets: '.icon-triangle',
+  translateX: 250,
+  translatey: -10,
+  rotate: 90,
+  duration: 50000,
+  loop: true,
+  easing: 'linear',
+  direction: 'alternate'
 });
+
+var moonAnimation = anime({
+  targets: '.icon-moon',
+  translateX: -50,
+  translatey: -10,
+  rotate: 90,
+  duration: 50000,
+  loop: true,
+  easing: 'linear',
+  direction: 'alternate'
+});
+
+var diagramAnimation = anime({
+  targets: '.icon-diagram',
+  rotate: 360,
+  duration: 50000,
+  loop: true,
+  easing: 'linear',
+});
+
+var rectangleAnimation = anime({
+  targets: '.icon-rectangle',
+  translateX: 250,
+  translatey: -10,
+  rotate: 90,
+  duration: 50000,
+  loop: true,
+  easing: 'linear',
+});
+
+var circleAnimation = anime({
+  targets: '.icon-circle',
+  translateX: -250,
+  translatey: -10,
+  duration: 50000,
+  loop: true,
+  easing: 'linear',
+});
+
+
+var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
